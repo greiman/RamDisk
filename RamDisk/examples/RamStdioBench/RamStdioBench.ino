@@ -1,3 +1,4 @@
+#include <SPI.h>
 #include <RamDisk.h>
 #include <SdFat.h>
 

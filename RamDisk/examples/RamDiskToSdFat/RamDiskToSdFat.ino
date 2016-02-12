@@ -1,5 +1,6 @@
 // Create a text fine on the RamDisk an then copy the file to an SD.
 // Warning this requires a new test version of SdFat.
+#include <SPI.h>
 #include <SdFat.h>
 #include <SdFatUtil.h>
 #include <RamDisk.h>

@@ -567,8 +567,8 @@ bool RamStream::fillBuf() {
       m_w = 0;
     }
   }
-  m_p = m_buf + UNGETC_BUF_SIZE;
-  int nr = RamBaseFile::read(m_p, sizeof(m_buf) - UNGETC_BUF_SIZE);
+  m_p = m_buf + RAM_UNGETC_BUF_SIZE;
+  int nr = RamBaseFile::read(m_p, sizeof(m_buf) - RAM_UNGETC_BUF_SIZE);
   if (nr <= 0) {
     m_flags |= nr < 0 ? F_ERR : F_EOF;
     m_r = 0;

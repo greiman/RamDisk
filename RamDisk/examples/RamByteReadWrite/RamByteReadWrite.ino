@@ -1,5 +1,6 @@
 // Example that compares single byte read/write
 // speed of buffered stream with simple file.
+#include <SPI.h>
 #include <RamDisk.h>
 #include <SdFat.h>
 #include <SdFatUtil.h>

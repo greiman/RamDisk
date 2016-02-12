@@ -3,6 +3,7 @@
 // Max write and sync time will be longer for a new file.
 // Rewriting a file require no directory update so sync() just returns.
 //
+#include <SPI.h>
 #include <RamDisk.h>
 
 const uint32_t N_SAMPLE = 12000L;

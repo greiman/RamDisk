@@ -28,11 +28,11 @@
 #include <RamBaseFile.h>
 //------------------------------------------------------------------------------
 /** Total size of stream buffer. The entire buffer is used for output.
-  * During input UNGETC_BUF_SIZE of this space is reserved for ungetc.
+  * During input RAM_RAM_UNGETC_BUF_SIZE of this space is reserved for ungetc.
   */
-const uint8_t STREAM_BUF_SIZE = 64;
+const uint8_t RAM_STREAM_BUF_SIZE = 64;
 /** Amount of buffer allocated for ungetc during input. */
-const uint8_t UNGETC_BUF_SIZE = 2;
+const uint8_t RAM_UNGETC_BUF_SIZE = 2;
 //------------------------------------------------------------------------------
 // Get rid of any macros defined in <stdio.h>.
 #include <stdio.h>
@@ -641,7 +641,7 @@ class RamStream : private RamBaseFile {
   uint8_t* m_p;
   uint8_t  m_r;
   uint8_t  m_w;
-  uint8_t  m_buf[STREAM_BUF_SIZE];
+  uint8_t  m_buf[RAM_STREAM_BUF_SIZE];
 };
 //------------------------------------------------------------------------------
 #endif  // RamStream_h

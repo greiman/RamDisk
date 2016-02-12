@@ -1,4 +1,5 @@
 // Test of multiple chips.
+#include <SPI.h>
 #include <RamDisk.h>
 
 #define USE_FRAM 0
